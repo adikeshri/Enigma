@@ -8,7 +8,7 @@ class Banner extends React.Component{
     {
         return(
             <div className="BannerBackground">
-                <img src={BannerLogo} className="BannerImage" />
+                <img src={BannerLogo} className="BannerImage" alt=""/>
             </div>
         )
     }
