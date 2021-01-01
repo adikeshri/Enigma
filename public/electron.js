@@ -19,6 +19,11 @@ function createWindow() {
         show: false});
     mainWindow.removeMenu();
     
+    mainWindow.webContents.on('did-finish-load' ,() => {
+        mainWindow.setTitle("Enigma");
+    })
+    
+    
     mainWindow.loadURL(
     isDev
     ? "http://localhost:3000"
