@@ -5,12 +5,20 @@ const path = require("path");
 const isDev = require("electron-is-dev");
 let mainWindow;
 function createWindow() {
-    mainWindow = new BrowserWindow({ width: 900,
+    splash = new BrowserWindow({
+        width: 400,
+        height: 300,
+        transparent: true,
+        frame: false,
+        alwaysOnTop: true});
+    splash.loadURL(`file://${path.join(__dirname, "../src/static/splash.html")}`);
+
+    mainWindow = new BrowserWindow({
+        width: 900,
         height: 680,
-    show: false});
-    splash = new BrowserWindow({width: 400, height: 300, transparent: true, frame: false, alwaysOnTop: true});
-    splash.loadURL(`file://${path.join(__dirname, "../static/splash.html")}`);
+        show: false});
     mainWindow.removeMenu();
+    
     mainWindow.loadURL(
     isDev
     ? "http://localhost:3000"

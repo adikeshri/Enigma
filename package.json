@@ -5,10 +5,10 @@
   "description": "Enigma - An applicaion to monitor applications",
   "author": "Aditya Keshri",
   "build": {
-  "appId": "com.enigma"
-},
-"main": "public/electron.js",
-"homepage": "./",
+    "appId": "com.enigma"
+  },
+  "main": "public/electron.js",
+  "homepage": "./",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
@@ -22,6 +22,7 @@
     "electron": "^11.1.1",
     "electron-builder": "^22.9.1",
     "electron-is-dev": "^1.2.0",
+    "flexbox-react": "^4.4.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
@@ -38,7 +39,7 @@
     "release": "yarn react-build && electron-builder --publish=always",
     "build": "yarn react-build && yarn electron-build",
     "start": "concurrently \"cross-env BROWSER=none yarn react-start\" \"wait-on http://localhost:3000 && electron .\""
-    },
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
