@@ -1,9 +1,13 @@
 .BannerBackground
 {
-    background-color: #191919;
+    background-color: #0C0C0C;
 }
-.BannerImage
-{
-    max-height: 100%;
-    max-width: 100%;
-}
+
+.BannerFont {
+    font-family: "Arial Black", sans-serif;
+    font-size: 0.75em;
+    letter-spacing: -0.5px;
+    color: #eae9e0;
+    font-weight: bold;
+    float: "right";
+  }
