@@ -8,7 +8,7 @@ class Banner extends React.Component{
     {
         return(
             <div className="BannerBackground">
-                <img src={BannerLogo} width="15px" height="15px" style={{margin:5, marginTop: 10.5, float: "left", marginRight: 4}}/>
+                <img src={BannerLogo} width="15px" height="15px" style={{margin:5, marginTop: 10.5, float: "left", marginRight: 4}} alt=""/>
                 <p className="BannerFont">ENIGMA</p>
             </div>
         )
