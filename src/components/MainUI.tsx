@@ -4,6 +4,7 @@ import Flexbox from "flexbox-react";
 
 import Banner from "../components/Banner/Banner";
 
+import TabMenu from "../components/TabMenu/TabMenu";
 class MainUI extends React.Component{
 
     render()
@@ -14,10 +15,10 @@ class MainUI extends React.Component{
                 <Banner/>
             </Flexbox>
             <Flexbox flexDirection="row" minWidth="100vh">
-                <Flexbox width="15%">
-                    Left Pane
+                <Flexbox width="35%">
+                    <TabMenu/>
                 </Flexbox>
-                <Flexbox width="85%">
+                <Flexbox width="65%">
                     Right Pane
                 </Flexbox>
             </Flexbox>
