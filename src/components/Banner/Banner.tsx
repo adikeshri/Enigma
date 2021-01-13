@@ -3,7 +3,6 @@ import  "./Banner.css";
 import BannerLogo from "../../icons/GreenSquare.png";
 
 class Banner extends React.Component{
-
     render()
     {
         return(
